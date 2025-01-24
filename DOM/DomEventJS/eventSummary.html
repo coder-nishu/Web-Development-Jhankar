@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event summary</title>
+  </head>
+  <body>
+    <h1>final domm handler</h1>
+    <h2 id="default-val"> Default text</h2>
+
+    <input id="input-field" type="text" />
+    <button id="update-btn">Update</button>
+    <br />
+    <br>
+    <button onclick="handleOnClick()">Handle event onclick</button>
+
+    <script>
+      function handleOnClick() {
+        console.log("button click");
+      }
+      
+
+      document
+        .getElementById("update-btn")
+        .addEventListener("click", function () {
+          const inputField = document.getElementById("input-field");
+          const inputvalue = inputField.value;
+
+          const p = document.getElementById("default-val");
+          p.innerText = inputvalue;
+          inputField.value = ''
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+body{
+    font-family: 'Bacasime Antique', serif;
+    margin: 0px;
+}
+
+.orange-color{
+    color: orange;
+}
+.flexible-container{
+    display: flex;
+    margin-bottom: 3%;
+    padding-bottom: 3%;
+    border-bottom: 4px dashed #bbb;
+}
+.heading{
+    width: 50%;
+    padding-left: 10%;
+    font-size: 15px;
+    margin-bottom: 10px;
+   
+    
+
+}
+.innerheading{
+    font-size: 60px;
+}
+.image{
+    width: 50%;
+    padding-left: 20%;
+    margin-top: 70px;
+   
+}
+.btn{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    border-radius: 10px;
+    background-image: linear-gradient(orange, tomato);
+    padding: 2px ;
+    margin: 10% 25% 10% 25%;
+}
+.top{
+    background-image: url(images/top-banner.png);
+    background-repeat: no-repeat;
+    /* background-image: url(images/dream-bg.png);
+    background-position: right; */
+    
+   
+}
+.mycarrer{
+    text-align: center;
+    color: orangered;
+    
+}
+.mid-section{
+    background-image: url(images/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.mid-heading{
+    /* width: 50%;
+    padding-left: 10%;
+    font-size: 15px;
+    margin-bottom: 10px; */
+    margin-right: 10%;
+
+}
+
+.experience-area {
+    background-image: url(images/exp-bg.png);
+   background-position: top left;
+   background-repeat: no-repeat;
+}
+
+.ex-box-shadow{
+    padding-left: 5%;
+    font-size: 15px;
+    margin-bottom: 10px;
+    box-shadow: 10px 10px 40px grey;
+    width: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
+  
+}
+#full-stack{
+    border-left: 7px solid;
+    border-image: linear-gradient(blue, yellow) ;
+    border-image-slice: 1;
+}
+#junior {
+    border-left: 7px solid;
+    border-image: linear-gradient(blue, cyan) ;
+    border-image-slice: 1;
+}
+footer p{
+    text-align: center;
+    font-size: 15px;
+}
+@media screen and (max-width: 576px) {
+    .top{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .mid-section{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+    }
+    .image{
+        width: 30%;
+        padding-left: 20%;
+        margin-top: 70px;
+       
+    }
+    
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour of dom</title>
+    <link rel="stylesheet" href="styles.css">
+    
+  </head>
+  <body>
+    <header><h1>Welcome to my DOM</h1></header>
+    <main id="main-content">
+        <section>
+            <h1> Awesome DOM</h1>
+          <ul>
+            <li>nishat</li>
+            <li>nirob</li>
+            <li>Nahar</li>
+            <li>Arif</li>
+          </ul>
+        </section>
+        <section>
+            <h1 id="fruits"> fruits</h1>
+          <ul>
+            <li>apple</li> 
+            <li>orange</li>
+            <li>banana</li>
+            <li>grapes</li>
+          </ul>
+        </section>
+        <section>
+            <h1> want to tour</h1>
+          <ul id="tour-places">
+            <li>zoo</li>
+            <li class="important-places">sundarban</li>
+            <li class="important-places">bandarban</li>
+            <li class="important-places">saint martin</li>
+          </ul>
+        </section>
+    </main>
+    
+    <!-- <script src="js/dom.js"></script> -->
+    <script src="js/append.js"></script>
+    <script src="js/styleIn.js"></script>
+    <script>
+        const licollection = document.getElementsByTagName('li')
+        // console.log(licollection)
+
+        // for(const i of licollection){
+        //     console.log(i.innerText);
+        // }
+
+      //  const someLI = document.querySelectorAll(".important-places")
+      //  console.log(someLI)
+    </script>
+  </body>
+</html>

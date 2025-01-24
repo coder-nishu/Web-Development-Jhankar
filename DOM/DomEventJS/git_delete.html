@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github delete system</title>
+</head>
+<body>
+    <h1 id="dlt-text">This is a repository which i want to delete</h1>
+    <input id="input-box" placeholder="Please type 'delete'" type="text">
+    <button id="dlt-btn" disabled>delete</button>
+    <script>
+        document.getElementById('input-box').addEventListener('keyup',function(event){
+            const text = event.target.value;
+            const dleteButton = document.getElementById('dlt-btn')
+            if(text === "delete"){
+                dleteButton.removeAttribute('disabled')
+            }
+            else
+            {
+                dleteButton.setAttribute('disabled',true)
+            }
+        })
+
+
+
+        document.getElementById('dlt-btn').addEventListener('click',function(){
+            const dltText = document.getElementById('dlt-text')
+            dltText.style.display = "none"
+        })
+    </script>
+</body>
+</html>
