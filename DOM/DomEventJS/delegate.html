@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delegate</title>
+  </head>
+  <body>
+    <h1>Exploring Delegate</h1>
+    <input id="input-box" type="text" />
+    <button id="input-btn">Add</button>
+    <ul id="list-ul">
+      <li class="item">Lorem ipsum dolor sit amet.</li>
+      <li class="item">Vitae officiis qui soluta obcaecati?</li>
+      <li class="item">Omnis est excepturi rerum itaque.</li>
+      <li class="item">Beatae enim pariatur ipsam! Fugiat?</li>
+      <li class="item">Culpa, consequatur? Obcaecati, accusamus impedit.</li>
+      <li class="item">Sed molestias porro quaerat qui?</li>
+    </ul>
+    <script>
+      document
+        .getElementById("input-btn")
+        .addEventListener("click", function () {
+          const textBox = document.getElementById("input-box");
+          const text = textBox.value;
+          const ul = document.getElementById("list-ul");
+          const li = document.createElement("li");
+          li.innerText = text;
+          li.classList.add("item");
+          ul.appendChild(li);
+        });
+
+    //   const items = document.getElementsByClassName("item");
+    //   for (const item of items) {
+    //     item.addEventListener("click", function (event) {
+    //       event.target.parentNode.removeChild(event.target);
+    //     });
+    //   }  //because of using item class,if new list added,it doesnt work for remove item
+ 
+
+      document.getElementById('list-ul').addEventListener('click', function(event){
+        event.target.parentNode.removeChild(event.target);
+      })
+
+
+    </script>
+  </body>
+</html>
