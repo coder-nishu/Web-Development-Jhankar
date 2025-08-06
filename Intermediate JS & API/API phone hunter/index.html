@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hunder</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </style>
+</head>
+
+<body>
+
+    <!-- URL Format: https://openapi.programming-hero.com/api/phones?search=${searchText}
+
+    Example: https://openapi.programming-hero.com/api/phones?search=iphone
+
+    Phone detail url:
+    URL Format: https://openapi.programming-hero.com/api/phone/${id}
+
+    Example: https://openapi.programming-hero.com/api/phone/apple_iphone_13_pro_max-11089 -->
+
+    <main class="container mx-auto">
+        <section class="m-6 ">
+            <input type="text" id="input-search" placeholder="Search..."
+                class="input input-ghost border-2 border-black rounded-lg" />
+            <button onclick="searchHandler()" id="btn-search" class="btn bg-[#0D6EFD] text-white">Search</button>
+        </section>
+        <section>
+            <!-- load spinner -->
+            <div id="load-spinner" class="text-center my-40 hidden">
+                <span class="loading loading-spinner text-primary"></span>
+            </div>
+            <!-- phone list container  -->
+            <div id="phoneListContainer" class="grid grid-cols-1  lg:grid-cols-3 md:grid-cols-2 justify-center gap-4">
+            </div>
+            <!-- ShowAll button  -->
+            <div id="ShowAllContainer" class="hidden text-center">
+                <button id="showAll-Btn" onclick="showAllHandler()" class="btn btn-primary my-6">ShowAll</button>
+            </div>
+        </section>
+    </main>
+    <!-- Open the modal using ID.showModal() method -->
+
+    <dialog id="my_modal_5" class="modal">
+        <div class="modal-box">
+            <div id="modal-container" class="card bg-base-100 w-96 h- shadow-sm">
+                <!-- load spinner -->
+            <div id="load-spinner" class="text-center my-40 hidden">
+                <span class="loading loading-spinner text-primary"></span>
+            </div>
+            </div>
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

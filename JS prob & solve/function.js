@@ -1,8 +1,7 @@
 //function structure
-function print(){
-    console.log("fan off kor");
+function print(v){
+    console.log(v);
 }
-print();
 //return all even numbers of an array function
 function retArray(arr){
     const newArr = [];
@@ -14,4 +13,4 @@ function retArray(arr){
     return newArr;
 }
 const arr = [12,21,33,44,56,65,71,82,93];
-console.log(retArray(arr));
+print(retArray(arr));
