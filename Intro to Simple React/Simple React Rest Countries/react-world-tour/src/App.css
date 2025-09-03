@@ -1,0 +1,11 @@
+#root {
+  max-width: 1280px;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

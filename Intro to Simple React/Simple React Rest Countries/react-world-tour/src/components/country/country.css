@@ -1,0 +1,13 @@
+.country{
+    border: 2px solid rgb(18, 115, 206);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+button {
+    margin: 0 10px 10px 0px;
+}
+.visited{
+    background-color: rgba(2, 128, 30, 0.726);
+}
