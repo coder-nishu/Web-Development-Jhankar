@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@font-face {
+    font-family: sora;
+    src: url(./assets/Fonts/Sora-VariableFont_wght.ttf);
+}
+@theme{
+    --font-sora: "Sora"
+}

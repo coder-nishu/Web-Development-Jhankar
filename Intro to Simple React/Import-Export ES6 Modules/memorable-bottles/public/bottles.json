@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "brand": "AquaPure",
+    "capasity": 700,
+    "material": "tritan",
+    "price": 250,
+    "weight": 180,
+    "lifespan": 5,
+    "hotcoldsupport": false
+  },
+  {
+    "id": 2,
+    "brand": "BlueWave",
+    "capasity": 750,
+    "material": "tritan",
+    "price": 300,
+    "weight": 190,
+    "lifespan": 5,
+    "hotcoldsupport": false
+  },
+  {
+    "id": 3,
+    "brand": "GreenLeaf",
+    "capasity": 650,
+    "material": "tritan",
+    "price": 280,
+    "weight": 175,
+    "lifespan": 5,
+    "hotcoldsupport": false
+  },
+  {
+    "id": 4,
+    "brand": "ThermoBlack",
+    "capasity": 1000,
+    "material": "stainless_steel_insulated",
+    "price": 550,
+    "weight": 420,
+    "lifespan": 10,
+    "hotcoldsupport": true
+  },
+  {
+    "id": 5,
+    "brand": "SteelPro",
+    "capasity": 800,
+    "material": "stainless_steel",
+    "price": 450,
+    "weight": 320,
+    "lifespan": 8,
+    "hotcoldsupport": false
+  },
+  {
+    "id": 6,
+    "brand": "Sportix",
+    "capasity": 750,
+    "material": "tritan",
+    "price": 350,
+    "weight": 200,
+    "lifespan": 5,
+    "hotcoldsupport": false
+  },
+  {
+    "id": 7,
+    "brand": "KiddoSip",
+    "capasity": 500,
+    "material": "BPA_free_plastic",
+    "price": 220,
+    "weight": 140,
+    "lifespan": 3,
+    "hotcoldsupport": false
+  },
+  {
+    "id": 8,
+    "brand": "TealStream",
+    "capasity": 600,
+    "material": "tritan",
+    "price": 260,
+    "weight": 170,
+    "lifespan": 4,
+    "hotcoldsupport": false
+  }
+]

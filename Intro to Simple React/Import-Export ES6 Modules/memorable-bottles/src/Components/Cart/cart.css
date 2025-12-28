@@ -1,0 +1,8 @@
+.cart-container img{
+    width: 100px;
+    height: 100px;
+}
+.cart-container{
+    display: flex;
+    gap: 10px;
+}
