@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Arjun Sharma",
+    "physics": 85,
+    "chem": 78,
+    "math": 92
+  },
+  {
+    "id": 2,
+    "name": "Priya Patel",
+    "physics": 92,
+    "chem": 88,
+    "math": 95
+  },
+  {
+    "id": 3,
+    "name": "Rahul Kumar",
+    "physics": 76,
+    "chem": 82,
+    "math": 79
+  },
+  {
+    "id": 4,
+    "name": "Sneha Singh",
+    "physics": 88,
+    "chem": 91,
+    "math": 87
+  },
+  {
+    "id": 5,
+    "name": "Vikram Reddy",
+    "physics": 79,
+    "chem": 75,
+    "math": 84
+  },
+  {
+    "id": 6,
+    "name": "Ananya Gupta",
+    "physics": 94,
+    "chem": 89,
+    "math": 96
+  },
+  {
+    "id": 7,
+    "name": "Karan Mehta",
+    "physics": 82,
+    "chem": 79,
+    "math": 88
+  },
+  {
+    "id": 8,
+    "name": "Isha Joshi",
+    "physics": 90,
+    "chem": 93,
+    "math": 91
+  },
+  {
+    "id": 9,
+    "name": "Rohan Das",
+    "physics": 74,
+    "chem": 77,
+    "math": 73
+  },
+  {
+    "id": 10,
+    "name": "Pooja Verma",
+    "physics": 87,
+    "chem": 85,
+    "math": 90
+  }
+]

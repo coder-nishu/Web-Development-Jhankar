@@ -1,0 +1,8 @@
+nav{
+    display: flex;
+    gap: 8px;
+}
+nav a.active{
+    text-decoration: underline;
+    color: blueviolet;
+}

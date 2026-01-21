@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Basic",
+    "price": 9.99,
+    "description": "Perfect for individuals and small projects",
+    "features": [
+      "5 Projects",
+      "10 GB Storage",
+      "Basic Support",
+      "Email Notifications",
+      "Mobile App Access"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Pro",
+    "price": 29.99,
+    "description": "Ideal for growing teams and businesses",
+    "features": [
+      "Unlimited Projects",
+      "100 GB Storage",
+      "Priority Support",
+      "Advanced Analytics",
+      "Email & SMS Notifications"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Enterprise",
+    "price": 99.99,
+    "description": "For large organizations with advanced needs",
+    "features": [
+      "Unlimited Everything",
+      "1 TB Storage",
+      "24/7 Dedicated Support",
+      "Advanced Security",
+      "Custom Analytics Dashboard",
+      "All Notification Channels"
+    ]
+  }
+]
