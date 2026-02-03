@@ -11,6 +11,7 @@ export default function Header() {
             <NavLink to="/laptops">laptops</NavLink>
             <NavLink to="/users">Users</NavLink>
             <NavLink to="/users2">Users2</NavLink>
+            <NavLink to="/posts">Posts</NavLink>
         </nav>
     </div>
   )
