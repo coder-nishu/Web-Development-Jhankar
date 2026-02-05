@@ -9,7 +9,6 @@ import Home from "./components/Home/Home.jsx";
 import Mobiles from "./components/Mobiles/Mobiles.jsx";
 import Laptops from "./components/Laptops/Laptops.jsx";
 import Users from "./components/Users/Users.jsx";
-import Users2 from "./components/Users2/Users2.jsx";
 import UserDetails from "./components/UserDetails/UserDetails.jsx";
 import Post from "./components/Post/Post.jsx";
 import Posts from "./components/Posts/Posts.jsx";
@@ -32,14 +31,14 @@ const router = createBrowserRouter([
         loader: () => fetch("https://jsonplaceholder.typicode.com/users"),
         Component: Users,
       },
-      {
-        path: "users2",
-        element: (
-          <Suspense fallback={<span>Loading...</span>}>
-            <Users2 userPromise={userPromise} />
-          </Suspense>
-        ),
-      },
+      // {
+      //   path: "users2",
+      //   element: (
+      //     <Suspense fallback={<span>Loading...</span>}>
+      //       <Users2 userPromise={userPromise} />
+      //     </Suspense>
+      //   ),
+      // },
       {
         path: "users/:userId",
         loader: ({ params }) =>
@@ -47,16 +46,21 @@ const router = createBrowserRouter([
         Component: UserDetails,
       },
       {
-        path: 'posts',
+        path: "posts",
         loader: () => fetch(`https://jsonplaceholder.typicode.com/posts`),
         Component: Posts,
       },
       {
-        path: 'posts/:postId',
-        loader: ({params}) => fetch(`https://jsonplaceholder.typicode.com/posts/${params.postId}`),
-        Component: PostDetails
-      }
+        path: "posts/:postId",
+        loader: ({ params }) =>
+          fetch(`https://jsonplaceholder.typicode.com/posts/${params.postId}`),
+        Component: PostDetails,
+      },
     ],
+  },
+  {
+    path: "*",
+    element: <h1>Not Found</h1>,
   },
 ]);
 createRoot(document.getElementById("root")).render(
