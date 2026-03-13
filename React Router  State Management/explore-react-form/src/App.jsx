@@ -6,17 +6,18 @@ import ConttrollerField from './Components/ControllerField/ConttrollerField'
 import UncontrolledField from './Components/UncontrolledField/UncontrolledField'
 import HookForm from './HookForm/HookForm'
 import ProductManagement from './ProductManagement/ProductManagement'
+import FamilyTree from './FamilyTree/FamilyTree'
 function App() {
 
   return (
     <>
-      <h1>Explore react form</h1>
       {/* <Simpleform/>
       <FormAction></FormAction> */}
       {/* <ConttrollerField/> */}
       {/* <UncontrolledField/> */}
       {/* <HookForm/> */}
-      <ProductManagement/>
+      {/* <ProductManagement/> */}
+      <FamilyTree/>
     </>
   )
 }

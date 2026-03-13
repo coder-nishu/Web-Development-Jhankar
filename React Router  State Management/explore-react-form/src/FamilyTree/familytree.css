@@ -1,0 +1,9 @@
+.border{
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    padding: 20px;
+}
+.flex{
+    display: flex;
+    gap: 10px;
+}

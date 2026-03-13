@@ -1,12 +1,19 @@
 import React from "react";
 
 export default function ProductTable({ products, setProducts }) {
+  const handleDeleteButton = (removeIndex) =>
+  {
+    const newProducts = products.filter((product,index) => index !== removeIndex)
+    setProducts([...newProducts])
+  }
+
   return (
     <div>
       <h2>Product Table</h2>
       <table border={1}>
         <thead>
           <tr>
+            <th>Seerial</th>
             <th>Product Name</th>
             <th>Product price</th>
             <th>Product quantity</th>
@@ -15,12 +22,13 @@ export default function ProductTable({ products, setProducts }) {
         </thead>
         <tbody>
           {products.length > 0 ? (
-            products.map((product) => (
-              <tr>
+            products.map((product,index) => (
+              <tr key={index}>
+                <td>{index+1}</td>
                 <td>{product.name}</td>
                 <td>{product.price}</td>
                 <td>{product.quantity}</td>
-                <td><button>Delete</button></td>
+                <td><button>Update</button> <button onClick={ () => handleDeleteButton(index)}>Delete</button></td>
               </tr>
             ))
           ) : (
